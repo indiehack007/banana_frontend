@@ -1,0 +1,248 @@
+/* App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* General body styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb; /* Light background for contrast */
+}
+
+/* Styling for the header */
+.header {
+  background-color: #ff5e00; /* Theme color */
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* Card.css */
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  border-radius: 0.75rem; /* Rounded corners */
+  padding: 1.5rem; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+  max-width: 33%; /* 1/3 of the total width */
+  text-align: center;
+  width: 300px; /* Fixed width for better control */
+}
+
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.plus-sign {
+  font-size: 3rem; /* Adjusted font size */
+  color: #ff5e00; /* Theme color */
+  font-weight: 700;
+}
+
+.card-text {
+  margin-top: 1rem;
+  font-size: 1.25rem; /* Slightly smaller text size */
+  font-weight: 600;
+  color: #333; /* Darker text color for readability */
+}
+
+/* Container styling */
+.container {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.card-section{
+  display: flex;
+  gap: 15px;
+}
+
+/* Center card on the page */
+.center-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer.css */
+
+.footer {
+  background-color: #ff5e00; /* Theme color */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+
+/* Popup.css */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+}
+
+.popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ff5e00; /* Theme color */
+}
+
+.popup-content h2 {
+  margin-bottom: 1rem;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+.popup-content button {
+  background: #ff5e00; /* Theme color */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background: #e55b00; /* Darker shade of theme color */
+}
+
+
+
+/* src/TemplateForm.css */
+
+.template-form-container {
+  background-color: #ffffff; /* White background for the container */
+  color: #333333; /* Dark text color for readability */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-title {
+  color: #ff5e00; /* Orange color for the title */
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333333; /* Dark color for labels */
+}
+
+.form-input,
+.color-input,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.color-input {
+  height: 40px; /* Set fixed height for color inputs */
+  cursor: pointer;
+}
+
+.form-select {
+  height: 40px; /* Match the height of the color inputs */
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #ff5e00; /* Orange color for the submit button */
+  color: #ffffff; /* White text on the button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #e64a19; /* Darker orange for hover effect */
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 94, 0, 0.5); /* Focus outline */
+}
+.website-card{
+  display: flex ;
+  gap: 10px;
+}
+
+
+
+.space{
+  padding-bottom: 50px;
+}
