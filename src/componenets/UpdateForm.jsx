@@ -82,7 +82,7 @@ const UpdateForm = () => {
 
     try {
       const response = await fetch(
-        "https://banana-tech.onrender.com/api/v1/template/66da8f444d4b52feb1934975",
+        `https://banana-tech.onrender.com/api/v1/template/${id}`,
         {
           method: "PUT", // Use 'POST' if you're creating a new template instead of updating
           headers: {
@@ -95,7 +95,7 @@ const UpdateForm = () => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-
+      navigate("/");
       alert("Form submitted successfully:");
     } catch (error) {
       console.error("Error submitting form:", error);
